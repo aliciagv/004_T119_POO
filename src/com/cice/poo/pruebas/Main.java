@@ -16,13 +16,13 @@ import com.cice.poo.dto.Vehiculo;
 public class Main {
     public static void main(String[] args){
         
-        Coche coche1 =new Coche();
+       // Coche coche1 =new Coche(5,"BASTIDOR","1111BCB");
+        Coche coche2 =new Coche();
+        coche2.encender();
         
+        Moto moto =new Moto(2,"BASTIDOR2");
         
-        Moto moto =new Moto();
-        
-        
-        Vehiculo vehiculo =new Vehiculo();
+       // Vehiculo vehiculo =new Vehiculo();
                
     
     

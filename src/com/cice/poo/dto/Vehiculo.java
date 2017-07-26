@@ -12,10 +12,39 @@ package com.cice.poo.dto;
 public class Vehiculo {
     
     //atributos de la clase vehículo
-    protected int numeroRuedas;
-    protected String bastidor;
+    private int numeroRuedas;
+    private String bastidor;
 
+    
+    protected Vehiculo(int numeroRuedas,String bastidor){
+        this.numeroRuedas=numeroRuedas;
+        this.bastidor=bastidor;
+    }
+    
+    public Vehiculo(int numeroRuedas){
+        this.numeroRuedas=numeroRuedas;
+    }
+    public Vehiculo(){
+    
+    }
+  
+    public int getNumeroRuedas() {
+        return numeroRuedas;
+    }
 
+    public void setNumeroRuedas(int numeroRuedas) {
+        this.numeroRuedas = numeroRuedas;
+    }
+
+    public String getBastidor() {
+        return bastidor;
+    }
+
+    public void setBastidor(String bastidor) {
+        this.bastidor = bastidor;
+    }
+
+    
     
     protected void encender(){
         System.out.println("Encendiendo motores");

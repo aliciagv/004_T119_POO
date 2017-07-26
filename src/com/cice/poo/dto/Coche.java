@@ -17,10 +17,21 @@ public class Coche extends Vehiculo{
     private String matricula;
 
     public Coche() {
-        this.encender();
-        
+        super();
+             
     }
-
+  
+   /* public Coche(int numeroRuedas, String bastidor, String matricula) {
+        super(numeroRuedas, bastidor);
+        this.matricula=matricula;
+    }*/
+  
+ 
+    @Override
+    public void encender(){
+        System.out.println("Encendiendo el coche");
+    
+    }
     /**
      * Método get del atributo idcoche
      * @return entero idCoche

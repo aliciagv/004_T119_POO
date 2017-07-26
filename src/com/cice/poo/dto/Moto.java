@@ -12,6 +12,10 @@ package com.cice.poo.dto;
 public class Moto extends Vehiculo{
     private int cilindrada;
 
+    public Moto(int numeroRuedas, String bastidor) {
+        super(numeroRuedas, bastidor);
+    }
+
     public int getCilindrada() {
         return cilindrada;
     }
