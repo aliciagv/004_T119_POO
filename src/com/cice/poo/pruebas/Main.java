@@ -5,9 +5,11 @@
  */
 package com.cice.poo.pruebas;
 
+
+import com.cice.poo.abstractas.Abstracta;
 import com.cice.poo.dto.Coche;
 import com.cice.poo.dto.Moto;
-import com.cice.poo.dto.Vehiculo;
+
 
 /**
  *
@@ -23,8 +25,15 @@ public class Main {
         Moto moto =new Moto(2,"BASTIDOR2");
         
        // Vehiculo vehiculo =new Vehiculo();
+       
+       Abstracta abs = new Abstracta() {
+            @Override
+            public String nombreCompleto() {
+               return "default";
+            }
+        };
                
-    
+       
     
     }
     
